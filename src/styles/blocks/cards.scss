@@ -26,6 +26,12 @@ $box-width: $card-width * $cards-in-line + $distance * ($cards-in-line - 1);
     margin: 29px 19px 42px;
     height: 134px;
     width: 160px;
+    transition: transform 400ms;
+
+    &:hover {
+      transform: scale(1.2);
+      border: 3px solid #f3f3f3;
+    }
   }
 
   &__name {
@@ -90,6 +96,7 @@ $box-width: $card-width * $cards-in-line + $distance * ($cards-in-line - 1);
   
     background: #00acdc;
     border-radius: 5px;
+    transition: 400ms;
 
     &:hover {
       color: #00acdc;
