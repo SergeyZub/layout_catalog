@@ -9,6 +9,14 @@
     margin: 29px 19px 42px;
     height: 134px;
     width: 160px;
+    transition: transform 400ms;
+
+    &:hover {
+      margin-left: 16px;
+      width: 166px;
+      transform: scale(1.2);
+      border: 3px solid #f3f3f3;
+    }
   }
 
   &__name {
@@ -73,10 +81,12 @@
   
     background: #00acdc;
     border-radius: 5px;
+    transition: color 400ms, background-color 400ms;
 
     &:hover {
       color: #00acdc;
-      background: #fff;
+      line-height: 38px;
+      background-color: #fff;
       border: 1px solid #00acdc;
     }
   }
