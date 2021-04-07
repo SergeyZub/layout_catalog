@@ -3,12 +3,14 @@
 }
 
 .cards-box {
+  padding: 50px $paddings;
   width: $box-width;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, $card-width);
+  gap: 50px 48px;
 
-  &__card {
-    margin-top: 50px;
+  @media (min-width: $box-width) {
+    grid-template-columns: repeat($cards-in-line, $card-width);
   }
 }
