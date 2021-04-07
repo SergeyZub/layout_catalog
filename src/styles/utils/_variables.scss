@@ -1,4 +1,6 @@
 $card-width: 200px;
 $cards-in-line: 4;
 $distance: 48px;
-$box-width: $card-width * $cards-in-line + $distance * ($cards-in-line - 1);
+$paddings: 40px;
+$box-width: $card-width * $cards-in-line + $distance * 
+  ($cards-in-line - 1) + $paddings * 2;
